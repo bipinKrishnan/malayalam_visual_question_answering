@@ -1,0 +1,9 @@
+transformers==4.41.2 
+peft==0.11.1
+datasets==2.19.2 
+accelerate==0.31.0 
+wandb==0.17.1
+evaluate==0.4.2
+nltk==3.8.1
+rouge-score==0.1.2
+huggingface-hub==0.24.5
