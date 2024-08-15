@@ -7,3 +7,4 @@ evaluate==0.4.2
 nltk==3.8.1
 rouge-score==0.1.2
 huggingface-hub==0.24.5
+gradio==4.41.0

@@ -9,6 +9,7 @@
    * finetune.py - code to run the second phase (finetuning) of the model training.
    * test.py - code to evaluate the trained model on the test set of VQA-X dataset.
    * utils.py - helper functions and classes for training and evaluating the model.
+   * demo.py - script to run the demo of the project. You will get an interface to upload an image and a question, the model generated answer will be shown in the same interface.
 
 3. Training the model
 
@@ -42,3 +43,13 @@
       ```
 
    The results of the evaluation will be displayed on the terminal.
+   
+6. Running the demo
+
+   The demo is created using the [Gradio library](https://www.gradio.app/). You can run the following command in the terminal to access the demo:
+   
+     ```
+     python demo.py
+     ```
+   
+   Running the above command will give you a public as well as a local URL to access the demo. The public URL is valid for 72 hours and can be shared with others. The local URL can only be accessed from your local system.
