@@ -5,9 +5,12 @@ import torch
 
 
 def seed_everything(seed):
+    # code for the function is taken from:
+    # https://pytorch-lightning.readthedocs.io/en/1.7.7/_modules/pytorch_lightning/utilities/seed.html#seed_everything
+    # https://github.com/bipinKrishnan/random-functions/blob/6aaef59b22c014d7cf179dda51321c17af49519b/random_functions/pytorch/utils.py#L24
     random.seed(seed)
-    np.random.seed(seed)
     os.environ['PYTHONHASHSEED'] = str(seed)
+    np.random.seed(seed)
     torch.manual_seed(seed)
 
     if torch.cuda.is_available():
