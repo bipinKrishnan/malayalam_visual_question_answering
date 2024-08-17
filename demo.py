@@ -78,7 +78,7 @@ if __name__=='__main__':
         inputs=[
             'image', 
             gr.Textbox(label='Question'), 
-            gr.Slider(label='Max tokens to generate', value=50, minimum=1, maximum=70, step=1)
+            gr.Slider(label='Max tokens to generate', value=45, minimum=1, maximum=70, step=1)
         ],
         outputs=[gr.Textbox(label='Generated answer'),],
     )
